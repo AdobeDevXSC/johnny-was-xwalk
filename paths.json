@@ -4,12 +4,12 @@
     "/content/johnny-was-xwalk/configuration:/.helix/config.json",
     "/content/johnny-was-xwalk/metadata:/metadata.json",
     "/content/johnny-was-xwalk/products:products.json",
-    "/content/dam/johnny-was-xwalk/images/:/images/"
+    "/content/dam/johnny-was-xwalk/products/:/products/",
+    "/content/dam/johnny-was-xwalk/teasers/:/teasers/"
   ],
   "includes": [
     "/content/johnny-was-xwalk/",
-    "/content/dam/johnny-was-xwalk/images/",
-    "/content/dam/johnny-was-xwalk/images/products",
-    "/content/dam/johnny-was-xwalk/images/teasers",
+    "/content/dam/johnny-was-xwalk/products",
+    "/content/dam/johnny-was-xwalk/teasers",
   ]
 }
