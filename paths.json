@@ -1,10 +1,14 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/johnny-was-xwalk/:/",
+    "/content/johnny-was-xwalk/configuration:/.helix/config.json",
+    "/content/johnny-was-xwalk/metadata:/metadata.json",
+    "/content/johnny-was-xwalk/products:products.json",
+    "/content/dam/johnny-was-xwalk/images/:/images/"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/johnny-was-xwalk/",
+    "/content/dam/johnny-was-xwalk/images/",
+    "/content/dam/johnny-was-xwalk/images/products",
   ]
 }
