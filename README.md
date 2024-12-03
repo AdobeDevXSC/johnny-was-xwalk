@@ -1,5 +1,6 @@
-# Your Project's Title...
-Your project's description...
+# Johnny Was Edge Delivery with XWalk & UE Demo
+Mockup site of Johnny Was' landing page to showcase how efficient is to develop sites in Edge Delivery Services with X-Walk & AEM Universal Editor.
+
 
 ## Environments
 - Preview: https://main--johnny-was-xwalk--AdobeDevXSC.aem.page/
