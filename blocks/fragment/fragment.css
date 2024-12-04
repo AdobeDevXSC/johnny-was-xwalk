@@ -19,19 +19,17 @@
 	  max-width: unset;
 	  margin: 0;
 	  padding: 0;
-	  border: solid 2px lime;
   }
   
   .fragment-wrapper .teaser-wrapper > .teaser.short > div > div a {
 	  display: block;
 	  text-decoration: none;
 	  grid-column: 1/ span 12;
-	  border: solid 2px purple;
   }
 
   .fragment-wrapper .teaser-wrapper > .teaser.short > div:first-of-type,
   .fragment-wrapper .teaser-wrapper > .teaser.short > div:nth-of-type(2) {
-	
+
   }
 
   .fragment-wrapper .teaser-wrapper > .teaser.short > div:first-of-type img,
@@ -51,7 +49,6 @@
 	  object-fit: cover;
 	  margin: 0;
 	  padding: 0;
-	  border: solid 2px orange;
   }
 
   
