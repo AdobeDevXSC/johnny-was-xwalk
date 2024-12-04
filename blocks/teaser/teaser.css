@@ -8,7 +8,7 @@ main .section.teaser-container > div {
 	max-width: unset;
 }
 
-.teaser > div > div.hidden {
+.teaser div.hidden {
 	display: none;
 	visibility: hidden;
 }
