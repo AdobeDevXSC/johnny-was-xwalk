@@ -186,7 +186,7 @@
 			"options": [
 			  {
 				"name": "Carousel Products",
-				"value": "https://main--johnny-was-xwalk--adobedevxsc.aem.page/products/.json"
+				"value": "https://main--johnny-was-xwalk--adobedevxsc.aem.page/products/carousel-products.json"
 			  }
 			]
 		}
