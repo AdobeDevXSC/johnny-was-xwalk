@@ -1,6 +1,5 @@
 export default function decorate(block) {
 	const blockImages = block.querySelectorAll('picture');
-	console.log("block images", blockImages, blockImages.length);
 
 	[...block.children].forEach((div, index) => {
 		div.classList.add(`teaser-div-${index}`)
@@ -44,7 +43,6 @@ export default function decorate(block) {
 		if(blockImages.length > 1){
 			const mobileImageWrapper = block.querySelector('.teaser-mobile-wrapper');
 			const desktopImageWrapper = block.querySelector('.teaser-desktop-wrapper');
-			console.log("toggle image", mobileImageWrapper)
 			
 			if(isDesktop.matches){
 				mobileImageWrapper.classList.add('hidden');
