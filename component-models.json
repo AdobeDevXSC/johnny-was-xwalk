@@ -264,6 +264,54 @@
     ]
   },
   {
+	"id": "linked-icon",
+	"fields": [
+		{
+		"component": "select",
+		"name": "icon",
+		"label": "Icon",
+        "valueType": "string",
+		"options": [
+			{
+			"name": "Bag",
+			"value": ":bag:"
+			},
+			{
+			"name": "Globe",
+			"value": ":globe:"
+			},
+			{
+			"name": "Heart",
+			"value": ":heart:"
+			},
+			{
+			"name": ":Location",
+			"value": ":location:"
+			},
+			{
+			"name": "Logo",
+			"value": ":logo:"
+			},
+			{
+			"name": "Search",
+			"value": ":search:"
+			},
+			{
+			"name": "User",
+			"value": ":user:"
+			}
+		  ]
+		},
+		{
+			"component": "text",
+			"valueType": "string",
+			"name": "Link",
+			"label": "link",
+			"value": ""
+		}
+	]
+  },
+  {
     "id": "teaser",
     "fields": [
       {

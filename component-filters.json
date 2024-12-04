@@ -12,6 +12,7 @@
       "image",
       "button",
       "title",
+	  "icon-list",
       "hero",
       "cards",
 	  "carousel",
@@ -35,10 +36,14 @@
   {
     "id": "column",
     "components": [
-      "text",
       "image",
-      "button",
-      "title"
+      "button"
+    ]
+  },
+  {
+    "id": "icon-list",
+    "components": [
+      "linked-icon"
     ]
   }
 ]
