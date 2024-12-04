@@ -116,12 +116,12 @@
 				"value": "understated"
 			},
 			{
-				"name": "Left Text",
-				"value": "left-text"
+				"name": "Text Left",
+				"value": "text-left"
 			},
 			{
-				"name": "Right Text",
-				"value": "right-text"
+				"name": "Text Right",
+				"value": "text-right"
 			},
 			{
 				"name": "Center Text",
