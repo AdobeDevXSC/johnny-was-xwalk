@@ -175,6 +175,24 @@
     ]
   },
   {
+    "id": "carousel",
+	"fields": [
+		{
+			"component": "select",
+			"valueType": "string",
+			"name": "link",
+			"label": "Service",
+			"value": "",
+			"options": [
+			  {
+				"name": "Carousel Products",
+				"value": "https://main--johnny-was-xwalk--adobedevxsc.aem.page/products/.json"
+			  }
+			]
+		}
+	]
+  },
+  {
     "id": "columns",
     "fields": [
       {
