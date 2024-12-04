@@ -189,7 +189,23 @@
 				"value": "https://main--johnny-was-xwalk--adobedevxsc.aem.page/products/carousel-products.json"
 			  }
 			]
+		},
+		{
+			"component": "select",
+			"name": "classes",
+			"label": "Block Class",
+			"options": [
+				{
+					"name": "Default",
+					"value": ""
+				},
+				{
+					"name": "Is JSON",
+					"value": "is-json"
+				}
+			]
 		}
+
 	]
   },
   {
