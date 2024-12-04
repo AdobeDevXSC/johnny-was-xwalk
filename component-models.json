@@ -116,6 +116,10 @@
 				"value": "understated"
 			},
 			{
+				"name": "Shipping",
+				"value": "shipping"
+			},
+			{
 				"name": "Text Left",
 				"value": "text-left"
 			},
