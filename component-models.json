@@ -103,10 +103,50 @@
         "name": "style",
         "label": "Style",
         "options": [
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
+			{
+				"name": "Background Color",
+				"value": "background-color"
+			},
+			{
+				"name": "Highlight",
+				"value": "highlight"
+			},
+			{
+				"name": "Understated",
+				"value": "understated"
+			},
+			{
+				"name": "Left Text",
+				"value": "left-text"
+			},
+			{
+				"name": "Right Text",
+				"value": "right-text"
+			},
+			{
+				"name": "Center Text",
+				"value": "center-text"
+			},
+			{
+				"name": "Text Under",
+				"value": "text-under"
+			},
+			{
+				"name": "Text Only",
+				"value": "text-only"
+			},
+			{
+				"name": "Two Up",
+				"value": "two-up"
+			},
+			{
+				"name": "Three Up",
+				"value": "three-up"
+			},		  
+			{
+				"name": "Is JSON",
+				"value": "is-json-carousel"
+			}
         ]
       }
     ]
