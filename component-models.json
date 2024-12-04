@@ -277,6 +277,10 @@
 			"value": ":bag:"
 			},
 			{
+			"name": "Facebook",
+			"value": ":fb:"
+			},
+			{
 			"name": "Globe",
 			"value": ":globe:"
 			},
@@ -285,12 +289,20 @@
 			"value": ":heart:"
 			},
 			{
-			"name": ":Location",
+			"name": "Instagram",
+			"value": ":insta:"
+			},
+			{
+			"name": "Location",
 			"value": ":location:"
 			},
 			{
 			"name": "Logo",
 			"value": ":logo:"
+			},
+			{
+			"name": "Pinterest",
+			"value": ":pinterest:"
 			},
 			{
 			"name": "Search",
