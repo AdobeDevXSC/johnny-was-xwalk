@@ -112,6 +112,21 @@
             }
           }
         },
+		{
+			"title": "Carousel",
+			"id": "carousel",
+			"plugins": {
+			  "xwalk": {
+				"page": {
+				  "resourceType": "core/franklin/components/block/v1/block/item",
+				  "template": {
+					"name": "Carousel",
+					"model": "carousel"
+				  }
+				}
+			  }
+			}
+		},
         {
           "title": "Columns",
           "id": "columns",
@@ -156,7 +171,22 @@
               }
             }
           }
-        }
+        },
+		{
+			"title": "Teaser",
+			"id": "teaser",
+			"plugins": {
+			  "xwalk": {
+				"page": {
+				  "resourceType": "core/franklin/components/block/v1/block/item",
+				  "template": {
+					"name": "Teaser",
+					"model": "teaser"
+				  }
+				}
+			  }
+			}
+		}
       ]
     }
   ]
