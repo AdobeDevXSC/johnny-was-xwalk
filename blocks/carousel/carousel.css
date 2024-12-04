@@ -7,12 +7,12 @@ main .section.carousel-container .default-content-wrapper {
 
 main .section.carousel-container .default-content-wrapper h5 {
 	margin: 0;
-	font-family: var(--johnny-body-font);
+	font-family: var(--body-font);
 	text-transform: uppercase;
     padding: 0;
     text-align: center;
     width: 100%;
-	color: var(--johnny-dark-color);
+	color: var(--dark-color);
 	font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: .08em;
@@ -95,7 +95,7 @@ main .section.is-json-carousel.carousel-container .carousel .carousel-slide a {
 
 main .section.is-json-carousel.carousel-container .carousel .carousel-slide h5 {
     font-size: 0.875rem;
-	font-family: var(--johnny-body-font);
+	font-family: var(--body-font);
 	text-transform: capitalize;
 	font-weight: 400;
 	text-align: left;
@@ -104,8 +104,8 @@ main .section.is-json-carousel.carousel-container .carousel .carousel-slide h5 {
 main .section.is-json-carousel.carousel-container .carousel .carousel-slide p {
 	margin: 0;
 	font-weight: 700;
-	color: var(--johnny-text-color);
-	font-family: var(--johnny-body-font);
+	color: var(--text-color);
+	font-family: var(--body-font);
     font-size: 0.875rem;
     letter-spacing: 0.025rem;
     line-height: 1rem;

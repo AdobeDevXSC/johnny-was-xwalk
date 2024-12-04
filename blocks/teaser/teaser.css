@@ -27,8 +27,8 @@ main .section .teaser h5 {
 }
 
 main .section .teaser h2 {
-	/* color: var(--johnny-text-color);
-    font-family: var(--johnny-heading-font); */
+	color: var(--text-color);
+    font-family: var(--heading-font);
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 3.4375rem;
@@ -38,8 +38,8 @@ main .section .teaser h2 {
 }
 
 main .section .teaser h5 {
-	/* color: var(--johnny-text-color);
-    font-family: var(--johnny-body-font); */
+	color: var(--text-color);
+    font-family: var(--body-font);
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 1.5rem;
@@ -49,8 +49,8 @@ main .section .teaser h5 {
 }
 
 main .section .teaser p:not(.button-container) {
-	/* font-family: var(--johnny-body-font);
-	color: var(--johnny-text-color); */
+	font-family: var(--body-font);
+	color: var(--text-color);
 	font-size: 0.875rem;
 	font-weight: 300;
 	letter-spacing: 0.05em;
@@ -82,11 +82,11 @@ main .section .teaser p.button-container a:hover {
 
 /* teasers with background color */
 main .section.background-color .teaser {
-	/* background-color: var(--johnny-gc); */
+	background-color: var(--gc);
 }
 
 main .section.background-color .teaser h2 {
-    /* font-family: var(--johnny-secondary-font); */
+    font-family: var(--secondary-font);
 	font-size: 3rem;
 }
 
@@ -262,8 +262,8 @@ main .section.understated .teaser p {
 }
 
 main .section.understated .teaser p:not(.button-container) a {
-	/* font-family: var(--johnny-body-font);
-	color: var(--johnny-dark-color); */
+	font-family: var(--body-font);
+	color: var(--dark-color);
 	font-size: 0.875rem;
 	font-weight: 400;
 	letter-spacing: 0.05em;

@@ -38,7 +38,7 @@
   
   /* shipping fragment */
   .fragment-container .shipping {
-	  background-color: var(--johnny-shipping-color);
+	  background-color: var(--shipping-color);
   }
   
   .fragment-wrapper .teaser > div > div { 
@@ -55,8 +55,8 @@
   }
   
   .fragment-wrapper .teaser p {
-	  color: var(--johnny-text-color);
-	  font-family: var(--johnny-body-font);
+	  color: var(--text-color);
+	  font-family: var(--body-font);
 	  font-size: 0.875rem;
 	  font-weight: 300;
 	  letter-spacing: 0.05em;
@@ -87,8 +87,8 @@
   
   .fragment-wrapper .teaser h5 {
 	  grid-column: 2/ span 10;
-	  color: var(--johnny-text-color);
-	  font-family: var(--johnny-body-font);
+	  color: var(--text-color);
+	  font-family: var(--body-font);
 	  text-transform: uppercase;
 	  font-weight: 500;
 	  font-size: 0.875rem;

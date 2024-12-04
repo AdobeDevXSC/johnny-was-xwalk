@@ -12,16 +12,17 @@
 
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --dark-color: #444;
+  --gc: #C9DCF1;
+  --text-color: #2e2e2e;;
+  --shipping-color: #e7e6e6;
+  --footer-color: #f4f4f4;
+  --sale-color:#d72a1f;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+/* fonts */
+  --body-font: avenir;
+  --heading-font: the-seasons, sans-serif;
+  --secondary-font: minerva-modern, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -106,7 +107,7 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
+  font-family: var(--heading-font);
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
@@ -168,32 +169,29 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
-  box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
-  margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+	font-family: var(--body-font);
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: var(--text-color);
+	text-decoration: underline;
+	text-underline-offset: 0.1875rem;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	letter-spacing: 0.05em;
+	line-height: 1.375rem;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
@@ -228,25 +226,22 @@ main img {
 }
 
 /* sections */
-main > .section {
-  margin: 40px 0;
-}
-
-main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
-}
-
-main > .section:first-of-type {
-  margin-top: 0;
-}
-
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
+main .section {
+	padding: 64px 16px;
   }
-}
+  
+  @media (width >= 600px) {
+	main .section {
+	  padding: 64px 32px;
+	}
+  }
+  
+  @media (width >= 900px) {
+	.section > div {
+	  max-width: 1200px;
+	  margin: auto;
+	}
+  }
 
 /* section metadata */
 main .section.light,
