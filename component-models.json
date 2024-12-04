@@ -249,8 +249,8 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
+        "name": "Block Link",
+        "label": "block-link",
         "value": ""
       },
       {
