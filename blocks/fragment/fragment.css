@@ -144,7 +144,7 @@ main .section.fragment-container {
 }
 
 @media(width <= 767px) {
-	.fragment-wrapper .teaser-wrapper .teaser {
+	.fragment-wrapper .teaser-wrapper .teaser.shipping {
 		padding: 40px 28px 8px;
 	}
 
@@ -157,7 +157,7 @@ main .section.fragment-container {
 		padding: 0;
 	}
 
-	.fragment-wrapper .teaser-wrapper .teaser h5 {
+	.fragment-wrapper .teaser.shipping h5 {
 		grid-column: 3/ span 9;
 	}
 }
