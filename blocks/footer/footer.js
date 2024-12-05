@@ -17,4 +17,9 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  const socialsBlock = footer.querySelector('.icon-list-wrapper');
+  const socialsLi = footer.querySelector('ul:nth-of-type(4) li:nth-of-type(2)');
+  socialsLi.append(socialsBlock);
+
 }
