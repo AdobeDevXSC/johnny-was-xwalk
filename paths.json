@@ -10,6 +10,8 @@
   ],
   "includes": [
     "/content/johnny-was-xwalk/",
-    "/content/dam/johnny-was-xwalk/products"
+    "/content/dam/johnny-was-xwalk/products",
+    "/content/dam/johnny-was-xwalk/teasers",
+    "/content/dam/johnny-was-xwalk/columns"
   ]
 }
