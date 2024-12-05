@@ -359,6 +359,10 @@
         "label": "Block Class",
         "options": [
 			{
+				"name": "Shipping",
+				"value": "shipping"
+			},
+			{
 				"name": "Short",
 				"value": "short"
 			}
