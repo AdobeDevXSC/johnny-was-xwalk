@@ -3,8 +3,7 @@
     "/content/johnny-was-xwalk/:/",
     "/content/johnny-was-xwalk/configuration:/.helix/config.json",
     "/content/johnny-was-xwalk/metadata:/metadata.json",
-    "/content/johnny-was-xwalk/products/carousel-products:/products/carousel-products.json",
-    "/content/johnny-was-xwalk/products/carouselproducts:/products/carouselproducts.json"
+    "/content/johnny-was-xwalk/products/carousel-products:/products/carousel-products.json"
   ],
   "includes": [
     "/content/johnny-was-xwalk/",
