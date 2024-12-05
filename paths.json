@@ -5,13 +5,13 @@
     "/content/johnny-was-xwalk/metadata:/metadata.json",
     "/content/johnny-was-xwalk/products/carousel-products:/products/carousel-products.json",
     "/content/dam/johnny-was-xwalk/products/:/images-products/",
-	"/content/dam/johnny-was-xwalk/teasers/:/teasers/",
-	"/content/dam/johnny-was-xwalk/columns/:/columns/"
+	  "/content/dam/johnny-was-xwalk/teasers/:/teasers/",
+	  "/content/dam/johnny-was-xwalk/columns/:/columns/"
   ],
   "includes": [
     "/content/johnny-was-xwalk/",
     "/content/dam/johnny-was-xwalk/products",
     "/content/dam/johnny-was-xwalk/teasers",
-	"/content/dam/johnny-was-xwalk/columns"
+	  "/content/dam/johnny-was-xwalk/columns"
   ]
 }
