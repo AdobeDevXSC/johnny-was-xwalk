@@ -1,14 +1,51 @@
+main .section.two-up.columns-container {
+    padding: 064px 5.125rem 64px 4.875rem;
+}
+
+main .section.two-up.columns-container > div,
+main .section.three-up.columns-container > div {
+	max-width: unset;
+}
+
 .columns > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 80px;
+}
+
+main .section.three-up.columns-container {
+	padding-bottom: 32px;
+}
+
+main .section.three-up.columns-container > div > .columns > div {
+	gap: 16px;
+	align-items: center;
+}
+
+main .section.three-up.columns-container > div .columns > div > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .section.three-up.columns-container > div .columns > div > div p.button-container {
+	position: static;
+	margin-top: 40px;
+}
+
+main .section.three-up.columns-container > div .columns > div > div p.button-container a {
+	color: var(--text-color);
+	font-weight: 500;
 }
 
 .columns img {
   width: 100%;
+  display: block;
 }
 
 .columns > div > div {
   order: 1;
+  position: relative;
 }
 
 .columns > div > .columns-img-col {
@@ -19,15 +56,74 @@
   display: block;
 }
 
-@media (width >= 900px) {
+.columns > div p.button-container {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+}
+
+.columns > div > div p {
+	margin: 0;
+}
+
+.columns > div p.button-container a {
+	color: var(--white);
+	display: block;
+	width: fit-content;
+}
+
+.columns > div p.button-container a:hover {
+	text-decoration: none;
+}
+
+/* responsive */
+@media (width <= 767px) {
+  main .section.two-up.columns-container,
+  main .section.three-up.columns-container {
+	padding: 40px 0.5rem;
+  }
+
+  main .section.three-up.columns-container > div > .columns > div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .section.three-up.columns-container > div .columns > div > div:nth-of-type(2) {
+	grid-column: 1/ span 2;
+	grid-row: 2;
+	margin-bottom: -28px;
+  }
+
+  main .section.three-up.columns-container > div .columns > div > div p.button-container {
+	position: static;
+	margin: 16px 0 32px;
+}
+
   .columns > div {
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: column;
+	gap: 2rem;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
   }
+}
+
+@media (width >= 767px) and (width <= 1023.98px) {
+	main .section.two-up.columns-container {
+		padding: 48px 2rem;
+	}
+
+	.columns > div {
+		gap: 2rem;
+    }
+}
+
+@media (width >= 1024px) {
+	main .section.three-up.columns-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+	}
 }
