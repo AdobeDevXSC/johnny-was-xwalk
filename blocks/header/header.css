@@ -311,7 +311,6 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav#nav .nav-tools {
 	grid-area: tools;
-	border: solid 2px orange;
   }
 
   header nav#nav .nav-tools .icon-list {	
@@ -320,7 +319,6 @@ header nav#nav .nav-tools {
 	justify-content: flex-end;
 	list-style: none;
 	padding: 0;
-	border: solid 2px lime;
   }
 
   header nav#nav .nav-tools .icon-list div,
