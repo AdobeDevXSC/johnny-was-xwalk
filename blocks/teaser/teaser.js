@@ -1,21 +1,27 @@
 export default function decorate(block) {
 	const blockImages = block.querySelectorAll('picture');
+	const isShipping = block.classList.contains('shipping');
 
-	[...block.children].forEach((div, index) => {
-		div.classList.add(`teaser-div-${index}`)
-		
+	[...block.children].forEach((div, index) => {		
 		if(index === 0){
 			div.classList.add('teaser-desktop-wrapper')
+			if(isShipping || blockImages.length == 1){
+				div.classList.remove('teaser-desktop-wrapper');
+				div.classList.add('shipping-icon');
+			}
 		}; 
 		
 		if(index == 1){
-			div.classList.add('teaser-mobile-wrapper')
+			div.classList.add('teaser-mobile-wrapper');
+			if(isShipping || blockImages.length == 1){
+				div.remove();
+			}
 		};
 		
 		if(index === 2){
 			div.classList.add('teaser-block-link')
 			const blockLink = div.querySelector('a');
-			if(blockLink && blockImages){
+			if(blockLink && blockImages.length > 1){
 				const blockHref = blockLink.href;
 				blockImages.forEach(pic => {
 					pic.closest('div').innerHTML = `
