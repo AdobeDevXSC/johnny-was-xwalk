@@ -192,25 +192,42 @@ header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
+  font-weight: 500;
 }
 
 header nav .nav-sections ul > li {
+  padding: 1.25rem .5rem;
+  font-family: var(--body-font);
+  font-size: 0.75rem;
   font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+header nav#nav .nav-sections ul li:last-of-type {
+	color: var(--sale-color);
 }
 
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
+  background-color: var(--white);
+  width: 100%;
 }
 
 header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
-@media (width >= 900px) {
+@media (width >= 1400px) {
   header nav .nav-sections {
     display: block;
     visibility: visible;
     white-space: nowrap;
+  }
+
+  header nav#nav a:any-link {
+	display: block;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
@@ -221,6 +238,7 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
     padding-right: 16px;
     cursor: pointer;
+	z-index: 10;
   }
 
   header nav .nav-sections .nav-drop::after {
@@ -243,15 +261,17 @@ header nav .nav-sections ul > li > ul > li {
     transform: rotate(315deg);
   }
 
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
+  header nav#nav .nav-sections ul {
+	display: flex;
+	gap: 0.25em;
+	margin: 0;
+	font-size: var(--body-font-size-xs);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+	font-weight: 300;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -287,7 +307,74 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
+
 /* tools */
-header nav .nav-tools {
-  grid-area: tools;
+header nav#nav .nav-tools {
+	grid-area: tools;
+  }
+
+  header nav#nav .nav-tools .icon-list {	
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	list-style: none;
+	padding: 0;
+  }
+
+  header nav#nav .nav-tools .icon-list div,
+  header nav#nav .nav-tools .icon-list div a  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	position: relative;
+	margin-left: 14px;
+  }
+
+  header nav#nav .nav-tools .icon-list div .icon, 
+  header nav#nav .nav-tools .icon-list div a .icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+  }
+
+  header nav#nav .nav-tools .icon-list div .icon img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+  /* search */
+  header nav#nav .nav-tools .icon-list div:first-of-type .icon img {
+	width: 16px;
+	height: 16px;
+  }
+
+  /* location */
+  header nav#nav .nav-tools .icon-list div:nth-of-type(3) a img {
+	width: 22px;
+  }
+
+  @media (width <= 1440px){
+	/* location & account*/
+  header nav#nav .nav-tools .icon-list div:nth-of-type(3),
+  header nav#nav .nav-tools .icon-list div:nth-of-type(4),
+  header nav#nav .nav-sections ul {
+	  display: none;
+	  visibility: hidden;
+  }
+}
+
+@media (width <= 1032px){
+  header nav#nav .nav-tools .icon-list div:nth-of-type(2) {
+	  display: none;
+	  visibility: hidden;
+  }
 }
