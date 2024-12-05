@@ -140,14 +140,14 @@ export default async function decorate(block) {
   }
   const link = block.querySelector('a');
   const serviceWrapper = link.closest('.carousel > div');
-//   console.log(serviceWrapper)
-//   serviceWrapper.style.display = 'none';
+  console.log(serviceWrapper)
+  serviceWrapper.style.display = 'none';
 
   if(isJSONCarousel){  
-  	const cardData = await fetchJson(link);
+  	const slideData = await fetchJson(link);
 
-	cardData.forEach((card, idx) => {
-		const picture = createOptimizedPicture(card.image, card.title, false, [{ width: 320 }]);
+	slideData.forEach((slide, idx) => {
+		const picture = createOptimizedPicture(slide.image, slide.title, false, [{ width: 320 }]);
 		picture.lastElementChild.width = '320';
 		picture.lastElementChild.height = '180';
 
@@ -157,17 +157,17 @@ export default async function decorate(block) {
 		createdSlide.classList.add('carousel-slide');
 		if(isJSONCarousel){
 		createdSlide.innerHTML = `
-		 <a href="${card.url}" aria-label="${card['anchor-text']}" title="${card['anchor-text']}" class="button">
-			<div class="cards-card-image">
+		 <a href="${slide.url}" aria-label="${slide['anchor-text']}" title="${slide['anchor-text']}" class="button">
+			<div class="slide-image">
 			${picture.outerHTML}
 			</div>
         </a>
-        <div class="cards-card-body">
-		  <a href="${card.url}" aria-label="${card['anchor-text']}" title="${card['anchor-text']}" class="button">
-          	<h5>${card.title}</h5>
+        <div class="slide-content-body">
+		  <a href="${slide.url}" aria-label="${slide['anchor-text']}" title="${slide['anchor-text']}" class="button">
+          	<h5>${slide.title}</h5>
 		  </a>
-		  <p>${card.price}</p>
-		  <p>${card.sale}</p>
+		  <p>${slide.price}</p>
+		  <p>${slide.sale}</p>
         </div>
       `;}
 
@@ -182,7 +182,7 @@ export default async function decorate(block) {
 			const indicator = document.createElement('li');
 			indicator.classList.add('carousel-slide-indicator');
 			indicator.dataset.targetSlide = idx;
-			indicator.innerHTML = `<button type="button"><span>${placeholders.showSlide || 'Show Slide'} ${idx + 1} ${placeholders.of || 'of'} ${cardData.length}</span></button>`;
+			indicator.innerHTML = `<button type="button"><span>${placeholders.showSlide || 'Show Slide'} ${idx + 1} ${placeholders.of || 'of'} ${slideData.length}</span></button>`;
 			slideIndicators.append(indicator);
 		}
 	})
