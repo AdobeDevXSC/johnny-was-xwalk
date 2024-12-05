@@ -4,6 +4,7 @@
     "/content/johnny-was-xwalk/configuration:/.helix/config.json",
     "/content/johnny-was-xwalk/metadata:/metadata.json",
     "/content/johnny-was-xwalk/products/carousel-products:/products/carousel-products.json",
+    "/content/johnny-was-xwalk/products/carouselproducts:/products/carouselproducts.json",
     "/content/dam/johnny-was-xwalk/products/:/images-products/",
 	  "/content/dam/johnny-was-xwalk/teasers/:/teasers/",
 	  "/content/dam/johnny-was-xwalk/columns/:/columns/"
